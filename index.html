@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Tabelas de Preços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Organizador de Preços Pessoal</h1>
+        <form id="priceForm">
+            <input type="text" id="productName" placeholder="Nome do Produto" required>
+            <input type="number" id="productPrice" placeholder="Preço" step="0.01" required>
+            <button type="submit">Adicionar/Atualizar</button>
+        </form>
+        
+        <h2>Tabela de Preços</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço (R$)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="priceTableBody">
+                <!-- Registros serão inseridos aqui via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
